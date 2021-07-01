@@ -4,7 +4,6 @@ jdk: openjdk11
 
 script:
  - mvn clean install
- - $TRAVIS_BUILD_DIR/install-jdk.sh -F 11 --target $JAVA_HOME
 
 notifications:
     email: ribeiro.ribeiro821@gmail.com
