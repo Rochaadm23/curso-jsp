@@ -1,10 +1,10 @@
 
 language: java
-jdk:
-  - oraclejdk11
+jdk: openjdk11
 
-script: ./mvnw clean install
- - ant build
+script:
+ - mvn clean install
+ - $TRAVIS_BUILD_DIR/install-jdk.sh -F 11 --target $JAVA_HOME
 
 notifications:
     email: ribeiro.ribeiro821@gmail.com
