@@ -10,6 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * Servlet implementation class ServletLogin
+ * Também chamadas de controllers ou ServletLoginController
  */
 @WebServlet("/ServletLogin")/*Mapeamento ou rota da página*/
 public class ServletLogin extends HttpServlet {
