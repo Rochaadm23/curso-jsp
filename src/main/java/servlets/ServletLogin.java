@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ServletLogin
  */
-//@WebServlet("/ServletLogin")/*Mapeamento ou rota da página*/
+@WebServlet("/ServletLogin")/*Mapeamento ou rota da página*/
 public class ServletLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -33,7 +33,7 @@ public class ServletLogin extends HttpServlet {
 	 * Recebe os dados enviados por um formulário
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println(request.getParameter("nome") + "Estamos indo bem");
+		System.out.println(request.getParameter("nome") + " Estamos indo bem");
 		
 	}
 

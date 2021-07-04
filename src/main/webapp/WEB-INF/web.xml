@@ -2,13 +2,16 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://java.sun.com/xml/ns/j2ee"
 	xmlns:web="http://java.sun.com/xml/ns/javaee"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_5_0.xsd http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_5_0.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+	http://java.sun.com/xml/ns/j2ee/web-app_5_0.xsd
+	http://java.sun.com/xml/ns/javaee
+	http://java.sun.com/xml/ns/javaee/web-app_5_0.xsd"
 	id="WebApp_ID" version="5.0">
 	<display-name>curso-jsp</display-name>
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
-	<servlet>
+	<!--  <servlet>
 		<description></description>
 		<display-name>ServletLogin</display-name>
 		<servlet-name>ServletLogin</servlet-name>
@@ -17,5 +20,5 @@
 	<servlet-mapping>
 		<servlet-name>ServletLogin</servlet-name>
 		<url-pattern>/ServletLogin</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping>-->
 </web-app>
