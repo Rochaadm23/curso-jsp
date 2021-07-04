@@ -8,7 +8,14 @@
 </head>
 <body>
 
+	<form action="">
 
+		<input name="nome">
+		<input name="idade"> 
+		<input type="submit" value="Enviar">
+
+
+	</form>
 
 
 </body>
