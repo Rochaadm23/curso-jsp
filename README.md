@@ -6,3 +6,5 @@
  * Criado o arquivo index.jsp.
  * Criado a primeira servlet.
 
+* Criado a estrutura Back-end e Front-end
+* 
