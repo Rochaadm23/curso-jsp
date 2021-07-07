@@ -1,0 +1,19 @@
+CREATE TABLE model_login(
+	login character varying (200),
+	senha character varying(200),
+	CONTRAINT login_unique UNIQUE (login)
+)
+WITH(
+	OIDS-FALSE
+	);
+	ALTER TABLE model.login
+	OWNER TO postgres;
+	
+	create table if not exists model_login(
+	login character varying(200) not null,
+	senha character varying(200) not null
+);
+
+insert into model_login(login,senha) values ('admin','admin');
+
+select login, senha from model_login;
