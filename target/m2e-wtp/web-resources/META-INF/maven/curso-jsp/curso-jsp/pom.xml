@@ -25,6 +25,7 @@
 
 
 	<build>
+
 		<plugins>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
@@ -38,5 +39,17 @@
 				</configuration>
 			</plugin>
 		</plugins>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-pmd-plugin</artifactId>
+					<version>3.14.0</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
+
+
 </project>
