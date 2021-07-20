@@ -35,7 +35,9 @@ h4{
 	top: 70%;
 	left: 33%;
 	font-size: 15px;
-	color: red;
+	color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
 	
 }
 </style>
