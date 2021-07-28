@@ -120,7 +120,7 @@
 											Screen
 									</a></li>
 									<li class="waves-effect waves-light"><a
-										href="ServletLogin?acao=Logout"> <i
+										href="<%= request.getContextPath() %>/ServletLogin?acao=Logout"> <i
 											class="ti-layout-sidebar-left"></i> Logout
 									</a></li>
 								</ul></li>
