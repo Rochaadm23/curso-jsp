@@ -1,9 +1,16 @@
 
 language: java
-jdk: openjdk11
 
+jdk: openjdk11
 script:
- - mvn clean install
+  - jdk_switcher use openjdk11
+  - # do stuff with OpenJDK 11
+  - wget https://github.com/sormuras/bach/raw/master/install-jdk.sh
+  - chmod +x $TRAVIS_BUILD_DIR/install-jdk.sh
+  - export JAVA_HOME=$HOME/openjdk11
+  - $TRAVIS_BUILD_DIR/install-jdk.sh -F 11 --target $JAVA_HOME
+  - # do stuff with open OpenJDK 11
+  
 
 notifications:
     email: ribeiro.ribeiro821@gmail.com
