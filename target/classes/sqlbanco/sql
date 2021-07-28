@@ -17,3 +17,21 @@ WITH(
 insert into model_login(login,senha) values ('admin','admin');
 
 select login, senha from model_login;
+
+
+Adicionando campos na tabela de usuário
+
+alter table model_login add id serial primary key;
+
+update model_login set nome = '';
+alter table model_login alter column nome set not null;
+
+update model_login set sobrenome = '';
+alter table model_login add sobrenome character varying(300);
+alter table model_login alter column sobrenome set not null;
+
+update model_login set email = '';
+alter table model_login add email character varying(300);
+alter table model_login alter column email set not null;
+
+select * from model_login;
